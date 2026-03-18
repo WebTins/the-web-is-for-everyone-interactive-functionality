@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* MARK: Custom properties */
+:root {
+    --background-color-1:#B3D686;
+    --background-color-2:#F8F39B;
+    --background-color-3:#D4C8E2;
+    --background-color-4:#02ADE6;
+    --background-color-5:#fdfdfd;
+    --background-color-6:#353434;
+    --background-color-7:#ececec;
+    --background-color-8:#c1f0ff;
+    
+    --text-color-1:#fff;
+    --text-color-2:#000;
+    --text-color-3:#009245;
+    
+    --font-size-xl: 2.5rem;
+    --font-size-l: 2rem;
+    --font-size-m: 1.5rem;
+    --font-size-sm: 1.3rem;
+    --font-size-s: 1.12rem;
+    --font-size-xs: 0.8rem;
+}
+
+@font-face {
+    font-family: Sansita;
+    src: url(assets/Sansita-Regular.ttf)
+}
+
+@font-face {
+    font-family: Opensans;
+    src: url(assets/OpenSans-Medium.ttf);
+}
+
+/* MARK: Body */
+body {  
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    /* ////////////////////////////////////////////////////////////// */
+        /* MARK: HOME PAGE */
+        /* DIT GEDEELTE GAAT OVER DE HOME PAGE */
+    /* ////////////////////////////////////////////////////////////// */
+    .main-home {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 1rem 1rem 80px 1rem;
+
+        h1 {
+            text-align: center;
+            margin: 0.5em 0 0.5em 0;
+            font-family: Sansita;
+        }
+
+        h2, h3 {
+            padding: 1rem 0 1rem 0;
+            font-family: Sansita;
+            font-weight: 200;
+        }
+
+        .field-collection {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--background-color-8);
+            border-radius: 10px;
+            font-family: Opensans;
+        }
+
+        .field-news img {
+            width: 100%;
+        }
+
+        .field-news {
+            width: 80%;
+            background-color: var(--background-color-3);
+            border-radius: 10px;
+            padding: 1rem;
+
+            .upper-info {
+                display: flex;
+                justify-content: space-between;
+
+                .field {
+                    outline: var(--text-color-2) solid;
+                    outline-width: 2px;
+                    width: fit-content;
+                    padding: 0.25rem;
+                    border-radius: 25px;
+                    font-family: Opensans;
+                    font-size: var(--font-size-xs);
+                }
+
+                .ago {
+                    font-family: Opensans;
+                    font-size: var(--font-size-xs);
+                }
+            }
+
+                h4 {
+                    font-family: Opensans;
+                    font-weight: 600;
+                    padding: 1rem 0 1rem 0;
+                }
+
+                img {
+                    align-self: center;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: auto;
+                }
+
+                .story {
+                    font-family: Opensans;
+                    font-size: var(--font-size-s);
+                    width: 25ch;
+                    padding-top: 1rem;
+                }
+        }
+
+        .news-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    
+    /* ////////////////////////////////////////////////////////////// */
+    /* MARK: CARD */
+    /* DIT GEDEELTE GAAT OVER DE FLIP CARD */
+    /* ////////////////////////////////////////////////////////////// */
+    .main-card {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 80px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            width: 350px;
+            gap: 1rem;
+            border-radius: 10px;
+            /* Geeft de browser een begrip voor de 3d diepte */
+            perspective: 1000px;
+
+            /* Binnencard card (Dit gaat de card laten draaien) */
+            .inner-card {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                width: 100%;
+                position: relative;
+                /* Dit zorgt dat de card 3d wordt */
+                transform-style: preserve-3d;
+                transition: transform 1s ease-in-out;
+
+                /* Voorkant van de card */
+                .front-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .plant-name {
+                        font-family: Sansita;
+                    }
+
+                    .latin {
+                        font-family: Opensans;
+                        padding: 1rem 0 2rem 0;
+                    }
+
+                    img {
+                        border-radius: 10px;
+                    }
+
+                    .more-info {
+                        padding-top: 3rem;
+                        font-family: Opensans;
+                    }
+                }
+
+                /* Achterkant van de card die alle info over de plant laat zien */
+                .back-card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    transform: rotateY(180deg);
+                    padding: 1.5rem;
+
+                    .plant-name {
+                        font-family: Sansita;
+                    }
+
+                    .omscription {
+                        font-family: Opensans;
+                        padding: 1rem 0 1rem 0;
+                    }
+
+                    p {
+                        font-family: Opensans;
+                        padding-top: 0.1rem;
+                    }
+                }
+
+                /* Zichtbaarheid card verbergen aan de achterkant */
+                .front-card, .back-card {
+                    position: absolute;
+                    backface-visibility: hidden;
+                    height: 80%;
+                    width: 100%;
+                    background-color: var(--background-color-2);
+                    border-radius: 10px;
+                    outline: var(--background-color-6) solid;
+                    cursor: pointer;
+                }
+            }
+
+            /* Laat de hele card 180 graden draaien */
+            .inner-card.is-flipped {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+
+    /* Footer navigatie */
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--background-color-5);
+        
+        /* De nav */
+        .nav-bar {
+            /* Lijst van de li's */
+            .nav-list {
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+                padding-top: 0.5rem;
+
+                .active {
+                    color: var(--background-color-1);
+                }
+
+                .active svg path {
+                    fill: var(--background-color-1);
+                }
+                
+                li {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    padding-bottom: 0.5rem;
+
+                    /* A link text */
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-decoration: none;
+                        color: var(--text-color-2);
+                        font-family: Sansita;
+                        transition: 0.2s ease-in-out;
+                        
+                    }
+
+                    a svg path {
+                        transition: 0.2s ease-in-out;
+                    }
+                    /* Hover state van de SVG */
+                    a:hover svg path {
+                        color: var(--text-color-3);
+                        fill: var(--text-color-3);
+                    }
+                    /* Hover state van de a link text */
+                    a:hover {
+                        color: var(--text-color-3);
+                    }
+                }
+            }
+        }
+    }
+}
