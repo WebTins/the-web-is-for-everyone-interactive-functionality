@@ -41,8 +41,6 @@
 body {  
         min-height: 100vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
 
     /* ////////////////////////////////////////////////////////////// */
         /* MARK: HOME PAGE */
@@ -139,6 +137,7 @@ body {
     .main-card {
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
         padding-bottom: 80px;
 
