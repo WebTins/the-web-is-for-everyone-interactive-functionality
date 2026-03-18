@@ -43,7 +43,7 @@ app.get('/', async function (request, response) {
    response.render('index.liquid')
 })
 
-// !!!! route naar veldverkenner !!!!  /)
+// !!!! ROUTE NAAR VELDVERKENNER !!!!  /)
 app.get('/veldverkenner', async function (request, response) {
    // Render index.liquid uit de Views map
    // Geef hier eventueel data aan mee
@@ -57,6 +57,18 @@ app.get('/veldverkenner', async function (request, response) {
     } catch (error) {
         response.render('veldverkenner.liquid', { plants: [] });
     }
+})
+
+// !!!! ROUTE NAAR HET NIEUWS !!!!  /)
+app.get('/nieuws', async function (request, response) {
+   // Render index.liquid uit de Views map
+   // Geef hier eventueel data aan mee
+   const res = await fetch('https://fdnd-agency.directus.app/items/frankendael_news');
+    const result = await res.json();
+
+    response.render('nieuws.liquid', {
+      news: result.data
+    });
 })
 
 app.use((req, res, next) => {
