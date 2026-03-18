@@ -1,0 +1,33 @@
+{% render 'partials/head.liquid' %}
+<main class="main-nieuws">
+
+    <h1 class="heading-news">Veld nieuws</h1>
+
+    {% comment %} FILTER BUTTONS {% endcomment %}
+    <div class="filter-nav">
+        <a href="#" class="filter-button">Laatste</a>
+        <a href="#" class="filter-button">In de bloei</a>
+        <a href="#" class="filter-button">Na de bloei</a>
+    </div>
+
+    {% comment %} ZOEKBALK {% endcomment %}
+    <div class="search-bar">
+        <span>🔍</span>
+        <input type="text" placeholder="Search">
+    </div>
+
+    {% comment %} ARTIKELEN {% endcomment %}
+    <div class="articles">
+        {% for news in news %}
+        <article class="news-article">
+            <img src="" alt="">
+            <p class="label">Bloemenveld</p>
+            <a href="/nieuws">TITEL</a>
+        </article>
+        <hr>
+        {% endfor %}
+    </div>
+</main>
+
+{% render 'partials/navigation.liquid' %}
+{% render 'partials/foot.liquid' %}
