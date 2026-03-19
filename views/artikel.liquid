@@ -1,0 +1,20 @@
+    <div class="comment-wrapper">
+    {% comment %} Chat input {% endcomment %}
+    <section class="comment">
+        <h2>Voeg een bericht toe</h2>
+        <form action="/nieuws/{{ news.id }}/{{ news.slug }}" method="POST">
+            <label>
+                Naam:
+                <input type="text" name="name" placeholder="Naam:" required>
+            </label>
+            
+            <label>
+                Bericht:
+                <textarea name="comment" required maxlength="100" style="height: 30px"></textarea>
+            </label>
+
+            <label>
+                <input type="submit" value="Verstuur" class="sumbit-button">
+            </label>
+        </form>
+    </section>
