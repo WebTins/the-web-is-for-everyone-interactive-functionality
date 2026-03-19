@@ -84,6 +84,14 @@ app.get('/nieuws/:slug', async function (request, response) {
       'sort' : '-date_created'  
     })
 
+    const commentResponse = await fetch('https://fdnd-agency.directus.app/items/frankendael_news_comments?' + commentParams)
+    const commentResponseJSON = await commentResponse.json()
+    console.log(commentResponseJSON)
+    response.render('artikel.liquid', {
+      news: result.data,
+      newsId: result.data.id,
+      comments: commentResponseJSON.data
+    });
   })
 
 // <form action="/nieuws/{{ news.id }}/{{ news.slug }}" method="POST"> vanuit formulier op de nieuwspagina wordt deze post route aangestuurd
