@@ -85,6 +85,33 @@ app.get('/nieuws/:slug', async function (request, response) {
     })
 
   })
+
+// <form action="/nieuws/{{ news.id }}/{{ news.slug }}" method="POST"> vanuit formulier op de nieuwspagina wordt deze post route aangestuurd
+app.post('/nieuws/:id/:slug', async (request, response) => {
+  
+    console.log(request.params.slug)
+    const postResponse = await fetch(
+      'https://fdnd-agency.directus.app/items/frankendael_news_comments', // API endpoint van de nieuws comments (hier kan je een GET en POST doen)
+      {
+        // dit is JSON object met de benodigde data om wat op te slaan
+        method: 'POST', // methode post meegeven zodat de server weet dat er data opgeslagen moet worden
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          news: request.params.id,     
+          comment: request.body.comment,
+          name: request.body.name // dit is wat er in het formulierelement staat <textarea name="comment" required maxlength="100" style="height: 30px;"></textarea>
+        })
+      }
+    )
+
+    // const data = await postResponse.json()
+
+    console.log('het gaat goed vgm')
+    response.redirect(`/nieuws/${request.params.slug}`) // als de post gelukt is eeen redirect naar de get route VAN HET NIEUWS ARTIKEL
+})
+
 app.use((req, res, next) => {
       res.status(404).render("404.liquid")
 })
