@@ -7,9 +7,9 @@
                 Terug
             </a>
         </div>
+        <h1 class="heading-news">Veld nieuws</h1>
     </div>
 
-    <h1 class="heading-news">Veld nieuws</h1>
 
     {% comment %} FILTER BUTTONS {% endcomment %}
     <div class="filter-nav">
@@ -30,7 +30,7 @@
         <article class="news-article">
             <img src="" alt="">
             <p class="label">Bloemenveld</p>
-            <a href="/nieuws">TITEL</a>
+            <h3><a href="/nieuws/{{ news.slug }}">{{ news.title }}</a></h3>
         </article>
         <hr>
         {% endfor %}
