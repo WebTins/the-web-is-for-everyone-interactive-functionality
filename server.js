@@ -72,6 +72,19 @@ app.get('/nieuws', async function (request, response) {
     });
 })
 
+// !!! Met deze GET krijg je het hele artikel te zien vanuit de database wanneer je op de nieuwspagina op een artikel klikt !!!
+app.get('/nieuws/:slug', async function (request, response) {
+    // const artikel = tempDummyNews.data.find(item => item.slug === nieuwSlug)
+    // deze code hieronder haalt data uit database op
+    const res = await fetch('https://fdnd-agency.directus.app/items/frankendael_news/?filter[slug]=' + request.params.slug);
+    const result = await res.json();
+// console.log(result.data[0].id)
+    const commentParams = new URLSearchParams({
+      'filter[news]': result.data[0].id,
+      'sort' : '-date_created'  
+    })
+
+  })
 app.use((req, res, next) => {
       res.status(404).render("404.liquid")
 })
