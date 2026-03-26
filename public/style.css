@@ -163,7 +163,7 @@ body {
                 transform-style: preserve-3d;
                 transition: transform 1s ease-in-out;
 
-                /* Voorkant van de card */
+                /* MARK: Voorkant van de card */
                 .front-card {
                     display: flex;
                     flex-direction: column;
@@ -188,7 +188,7 @@ body {
                     }
                 }
 
-                /* Achterkant van de card die alle info over de plant laat zien */
+                /* MARK:  Achterkant van de card die alle info over de plant laat zien */
                 .back-card {
                     display: flex;
                     flex-direction: column;
@@ -232,7 +232,7 @@ body {
         }
     }
 
-    /* Footer navigatie */
+    /* MARK: FOOTER navigatie */
     footer {
         position: fixed;
         bottom: 0;
@@ -245,8 +245,8 @@ body {
             .nav-list {
                 display: flex;
                 justify-content: center;
-                gap: 3rem;
                 padding-top: 0.5rem;
+                gap: 3rem;
 
                 .active {
                     color: var(--background-color-1);
@@ -273,7 +273,6 @@ body {
                         color: var(--text-color-2);
                         font-family: Sansita;
                         transition: 0.2s ease-in-out;
-                        
                     }
 
                     a svg path {
@@ -290,6 +289,102 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    .main-news{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        .back-button {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .back-button {
+            position: relative;
+            right: 100%;
+            top: 50%;
+            margin: 1.5em;
+            
+            a {
+                transition: 0.2s ease-in-out;
+                font-family: Opensans;
+                font-weight: 600;
+                color: var(--zwart);
+                text-decoration: none;
+                display: flex;
+                gap: 0.5em;
+
+                &:hover {
+                    color: var(--text-color-3);
+                }
+            }
+
+            a svg path {
+                transition: 0.2s ease-in-out;
+            }
+            /* Hover state van de SVG */
+            a:hover svg path {
+                color: var(--text-color-3);
+                fill: var(--text-color-3);
+            }
+            /* Hover state van de a link text */
+            a:hover {
+                color: var(--text-color-3);
+            }
+        }
+
+        .heading-news {
+            font-family: Sansita;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .filter-nav {
+            display: flex;
+            padding: 2rem;
+            gap: 1.5rem;
+
+            .filter-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 40px;
+                padding: .5rem;
+                background-color: var(--background-color-2);
+                text-decoration: none;
+                border-radius: 10px;
+                color: var(--text-color-2);
+                font-family: Sansita;
+                transition: 0.2s ease-in-out;
+            }
+
+            .filter-button:hover {
+                background-color: var(--background-color-6);
+                color: var(--text-color-1);
+            }
+        }
+        
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .search-bar input {
+            background: var(--background-color-7);
+            width: 80%;
+            height: 3rem;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            padding: 0 3.5em 0 1.5em;
+            font-size: 1em;
         }
     }
 }
