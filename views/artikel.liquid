@@ -46,6 +46,7 @@
         {% for comment in comments %}
         <p>{{ comment.name | default: "Onbekend" }}: {{ comment.comment }} {{ comment.date_created | date: '%d-%m-%Y %H:%M' }}</p>
         {% else %}
+            {% comment %} Empty state {% endcomment %}
         <p>Er zijn nog geen berichten voor dit artikel.</p>
         {% endfor %}
     </section>
