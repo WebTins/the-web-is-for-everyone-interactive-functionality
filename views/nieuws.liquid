@@ -26,7 +26,7 @@
     <div class="articles">
         {% for news in news %}
         <article class="news-article">
-            <img src="" alt="">
+            <img src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="">
             <p class="label">Bloemenveld</p>
             <h3><a href="/nieuws/{{ news.slug }}">{{ news.title }}</a></h3>
         </article>
