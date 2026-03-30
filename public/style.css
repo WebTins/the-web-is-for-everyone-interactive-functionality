@@ -455,9 +455,10 @@ body {
                     border-radius: 10px;
                     transition: 0.2s ease-in-out;
 
-                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
-                @media (prefers-reduced-motion: reduce) {
-                    transition: none;
+                    /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                    @media (prefers-reduced-motion: reduce) {
+                        transition: none;
+                    }
                 }
 
                 p {
@@ -470,6 +471,10 @@ body {
                     font-size: var(--font-size-xs);
                     transition: 0.2s ease-in-out;
 
+                    /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                    @media (prefers-reduced-motion: reduce) {
+                        transition: none;
+                    }
                 }
 
                 h3 {
@@ -477,6 +482,10 @@ body {
                     font-size: var(--font-size-xs);
                     transition: 0.2s ease-in-out;
 
+                    /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                    @media (prefers-reduced-motion: reduce) {
+                        transition: none;
+                    }
                 }
             }
         }
