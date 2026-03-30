@@ -24,7 +24,7 @@
     --font-size-m: 1.5rem;
     --font-size-sm: 1.3rem;
     --font-size-s: 1.12rem;
-    --font-size-xs: 0.8rem;
+    --font-size-xs: 1em;
 }
 
 @font-face {
@@ -310,6 +310,7 @@ body {
         }
     }
 
+    /* MARK: NIEUWSVELD */
     .main-news{
         display: flex;
         flex-direction: column;
@@ -372,6 +373,8 @@ body {
 
         .filter-nav {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             padding: 2rem;
             gap: 1.5rem;
 
@@ -379,7 +382,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 100px;
+                width: 90px;
                 height: 40px;
                 padding: .5rem;
                 background-color: var(--background-color-2);
@@ -419,9 +422,10 @@ body {
             font-size: 1em;
         }
 
+        /* MARK: NIEUWSVELD ARTIKEL */
         .news-article {
             display: grid;
-            grid-template-columns: .5fr 1fr;
+            grid-template-columns: minmax(120px, .5fr ) 1fr;
             margin: 1rem 0em 1rem 0em;
             width: 90%;
             overflow: hidden;
@@ -445,7 +449,12 @@ body {
                 font-size: var(--font-size-xs);
             }
 
+            h3 {
+                font-size: var(--font-size-xs);
+            }
+
             a {
+                display: contents;
                 font-family: Opensans;
                 color: var(--text-color-2);
                 text-decoration: none;
