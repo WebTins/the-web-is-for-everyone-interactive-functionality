@@ -55,12 +55,12 @@ body {
         h1 {
             text-align: center;
             margin: 0.5em 0 0.5em 0;
-            font-family: Sansita;
+            font-family: Sansita, Opensans;
         }
 
         h2, h3 {
             padding: 1rem 0 1rem 0;
-            font-family: Sansita;
+            font-family: Sansita, Opensans;
             font-weight: 200;
         }
 
@@ -162,6 +162,11 @@ body {
                 /* Dit zorgt dat de card 3d wordt */
                 transform-style: preserve-3d;
                 transition: transform 1s ease-in-out;
+
+                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                @media (prefers-reduced-motion: reduce) {
+                    transition: none;
+                }
 
                 /* MARK: Voorkant van de card */
                 .front-card {
@@ -273,10 +278,20 @@ body {
                         color: var(--text-color-2);
                         font-family: Sansita;
                         transition: 0.2s ease-in-out;
+
+                        /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                        @media (prefers-reduced-motion: reduce) {
+                            transition: none;
+                        }
                     }
 
                     a svg path {
                         transition: 0.2s ease-in-out;
+
+                    /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                        @media (prefers-reduced-motion: reduce) {
+                            transition: none;
+                        }
                     }
                     /* Hover state van de SVG */
                     a:hover svg path {
@@ -317,6 +332,11 @@ body {
                 display: flex;
                 gap: 0.5em;
 
+                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                @media (prefers-reduced-motion: reduce) {
+                    transition: none;
+                }
+
                 &:hover {
                     color: var(--text-color-3);
                 }
@@ -324,6 +344,11 @@ body {
 
             a svg path {
                 transition: 0.2s ease-in-out;
+
+                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                @media (prefers-reduced-motion: reduce) {
+                    transition: none;
+                }
             }
             /* Hover state van de SVG */
             a:hover svg path {
@@ -360,6 +385,11 @@ body {
                 color: var(--text-color-2);
                 font-family: Sansita;
                 transition: 0.2s ease-in-out;
+
+                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                @media (prefers-reduced-motion: reduce) {
+                    transition: none;
+                }
             }
 
             .filter-button:hover {
@@ -418,6 +448,11 @@ body {
                 text-decoration: none;
                 font-size: 16px;
                 transition: 0.2s ease-in-out;
+
+                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+                @media (prefers-reduced-motion: reduce) {
+                    transition: none;
+                }
             }
 
             a:hover {
