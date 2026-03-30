@@ -423,52 +423,61 @@ body {
         }
 
         /* MARK: NIEUWSVELD ARTIKEL */
-        .news-article {
-            display: grid;
-            grid-template-columns: minmax(120px, .5fr ) 1fr;
-            margin: 1rem 0em 1rem 0em;
-            width: 90%;
-            overflow: hidden;
-            padding: 0 1rem;
-            
-            img {
-                grid-row: 1 / 3;
+
+        .link-wrapper {
+            display: block;
+            text-decoration: none;
+            color: var(--text-color-2);
+            transition: 0.2s ease-in-out;
+
+            &:hover .news-article h3,
+            &:hover .news-article p {
+                color: var(--text-color-3);
+            }
+
+            &:hover .news-article img {
+                opacity: 0.8;
+            }
+
+            .news-article {
+                display: grid;
+                grid-template-columns: minmax(120px, .5fr ) 1fr;
+                margin: 1rem 0em 1rem 0em;
                 width: 90%;
-                height: 120px;
-                object-fit: cover;
-                border-radius: 10px;
-            }
-
-            p {
-                align-self: start;
-                width: fit-content;
-                border: 1px solid var(--text-color-2);
-                border-radius: 25px;
-                padding: 0.15rem 0.6rem;
-                font-family: Opensans;
-                font-size: var(--font-size-xs);
-            }
-
-            h3 {
-                font-size: var(--font-size-xs);
-            }
-
-            a {
-                display: contents;
-                font-family: Opensans;
-                color: var(--text-color-2);
-                text-decoration: none;
-                font-size: 16px;
-                transition: 0.2s ease-in-out;
+                overflow: hidden;
+                padding: 0 1rem;
+                
+                img {
+                    grid-row: 1 / 3;
+                    width: 90%;
+                    height: 120px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    transition: 0.2s ease-in-out;
 
                 /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
                 @media (prefers-reduced-motion: reduce) {
                     transition: none;
                 }
-            }
 
-            a:hover {
-                color: var(--text-color-3);
+                p {
+                    align-self: start;
+                    width: fit-content;
+                    border: 1px solid var(--text-color-2);
+                    border-radius: 25px;
+                    padding: 0.15rem 0.6rem;
+                    font-family: Opensans;
+                    font-size: var(--font-size-xs);
+                    transition: 0.2s ease-in-out;
+
+                }
+
+                h3 {
+                    font-family: Opensans;
+                    font-size: var(--font-size-xs);
+                    transition: 0.2s ease-in-out;
+
+                }
             }
         }
     }
