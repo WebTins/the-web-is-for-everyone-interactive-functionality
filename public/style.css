@@ -249,9 +249,11 @@ body {
             /* Lijst van de li's */
             .nav-list {
                 display: flex;
-                justify-content: center;
+                justify-content: space-evenly;
+                max-width: 500px;
+                margin: 0 auto;
                 padding-top: 0.5rem;
-                gap: 3rem;
+                gap: 1rem;
 
                 .active {
                     color: var(--background-color-1);
@@ -278,7 +280,8 @@ body {
                         color: var(--text-color-2);
                         font-family: Sansita;
                         transition: 0.2s ease-in-out;
-
+                        font-size: clamp(1rem, 3vw, 1.2rem);
+                        
                         /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
                         @media (prefers-reduced-motion: reduce) {
                             transition: none;
