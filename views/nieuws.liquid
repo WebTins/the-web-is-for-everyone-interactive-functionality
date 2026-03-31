@@ -29,10 +29,10 @@
             <article class="news-article">
                 <img src="https://fdnd-agency.directus.app/assets/{{news.image}}" alt="">
                 <p class="label">Bloemenveld</p>
-                <h3>{{ news.title }}</h3>
+                <h2>{{ news.title }}</h2>
             </article>
         </a>
-        <hr>
+        {% comment %} <hr> {% endcomment %}
         {% endfor %}
     </div>
 </main>
