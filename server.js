@@ -6,7 +6,6 @@ import express, { response } from 'express'
 import { Liquid } from 'liquidjs';
 
 
-console.log('Hieronder moet je waarschijnlijk nog wat veranderen')
 // Doe een fetch naar de data die je nodig hebt
 // const apiResponse = await fetch('...')
 
@@ -35,6 +34,8 @@ app.engine('liquid', engine.express());
 // Stel de map met Liquid templates in
 // Let op: de browser kan deze bestanden niet rechtstreeks laden (zoals voorheen met HTML bestanden)
 app.set('views', './views')
+
+const baseURL = 'https://fdnd-agency.directus.app/items/'
 
 // Maak een GET route voor de index (meestal doe je dit in de root, als /)
 app.get('/', async function (request, response) {
@@ -83,9 +84,8 @@ app.get('/nieuws/:slug', async function (request, response) {
       'sort' : '-date_created'  
     })
 
-    const commentResponse = await fetch('https://fdnd-agency.directus.app/items/frankendael_news_comments?' + commentParams)
+    const commentResponse = await fetch(`${baseURL}frankendael_news_comments?${commentParams}`)
     const commentResponseJSON = await commentResponse.json()
-    console.log(commentResponseJSON)
     response.render('artikel.liquid', {
       news: result.data,
       newsId: result.data.id,
@@ -96,7 +96,6 @@ app.get('/nieuws/:slug', async function (request, response) {
 // <form action="/nieuws/{{ news.id }}/{{ news.slug }}" method="POST"> vanuit formulier op de nieuwspagina wordt deze post route aangestuurd
 app.post('/nieuws/:id/:slug', async (request, response) => {
   
-    console.log(request.params.slug)
     const postResponse = await fetch(
       'https://fdnd-agency.directus.app/items/frankendael_news_comments', // API endpoint van de nieuws comments (hier kan je een GET en POST doen)
       {
@@ -116,7 +115,18 @@ app.post('/nieuws/:id/:slug', async (request, response) => {
     // const data = await postResponse.json()
 
     console.log('het gaat goed vgm')
-    response.redirect(`/nieuws/${request.params.slug}`) // als de post gelukt is eeen redirect naar de get route VAN HET NIEUWS ARTIKEL
+    response.redirect(`/nieuws/${request.params.slug}#reviews`) // als de post gelukt is eeen redirect naar de get route VAN HET NIEUWS ARTIKEL
+})
+
+app.post('/nieuws/:id/:slug/verwijder', async (request, response) => {
+  const commentId =  request.body.comment_id
+  const slug = request.params.slug
+
+  await fetch(`${baseURL}frankendael_news_comments/${commentId}`, {
+      method: 'DELETE'
+    });
+
+  response.redirect(303, `/nieuws/${slug}#reviews`) // als de post gelukt is eeen redirect naar de get route VAN HET NIEUWS ARTIKEL
 })
 
 app.use((req, res, next) => {
