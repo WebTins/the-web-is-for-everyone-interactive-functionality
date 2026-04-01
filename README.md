@@ -120,15 +120,15 @@ In mijn code maak ik gebruik van ademruimte dat ervoor zorgt dat het lezen van c
 
 [Voorbeeld](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/a7889db594d4f1d59af92119c2ac4959608d7041/public/style.css#L7-L38)
 
-## Volgorde HTML en CSS nesting
+### Volgorde HTML en CSS nesting
 
 Bij mijn code conventies hou ik rekening met de vologorde van de HTML structuur die ook in het CSS bestand op volgorde wordt gehouden, hierdoor wordt het lezen van code volgbaar en leesbaar. In mijn CSS bestand nest ik code die in het parent element/class horen. Dit zorgt voor een duidelijke structuur dat het lezen makkelijker maakt.
 
-## Custom properties
+### Custom properties
 
 Ik maak gebruik van custom-properties zodat ik niet steeds code hoeven te herhalen (DRY). De custom properties krijgen een duidelijke naamgeving in kebabcase zoals `--text-color-1`.
 
-## Class naamgeving
+### Class naamgeving
 
 De classes die ik aanmaak worden allemaal in het Engels geschreven met kebab-cases. Dit maakt het lezen makkelijker omdat je een scheiding maakt tussen woorden die niet leesbaar zijn aan elkaar.
 
