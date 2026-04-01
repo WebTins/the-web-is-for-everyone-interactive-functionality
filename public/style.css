@@ -191,7 +191,7 @@ body {
                     }
 
                     .more-info {
-                        padding-top: 3rem;
+                        padding-top: 6rem;
                         font-family: Opensans;
                     }
                 }
@@ -207,6 +207,7 @@ body {
 
                     .plant-name {
                         font-family: Sansita;
+                        align-self: center;
                     }
 
                     .omscription {
@@ -218,13 +219,39 @@ body {
                         font-family: Opensans;
                         padding-top: 0.1rem;
                     }
+
+                    .flex-btn {
+                        display: flex;
+                        align-self: center;
+                        gap: 1.5rem;
+                        padding-top: 1.5rem;
+
+                        .back-btn {
+                            background-color: transparent;
+                        }
+
+                        .next-btn {
+                            color: var(--text-color-1);
+                            background-color: var(--background-color-6);
+                            border: none;
+                        }
+
+                        button {
+                            font-family: Opensans;
+                            padding: 1rem;
+                            width: 150px;
+                            border-radius: 10px;
+                        }
+                    }
                 }
+
+
 
                 /* Zichtbaarheid card verbergen aan de achterkant */
                 .front-card, .back-card {
                     position: absolute;
                     backface-visibility: hidden;
-                    height: 80%;
+                    height: 100%;
                     width: 100%;
                     background-color: var(--background-color-2);
                     border-radius: 10px;
