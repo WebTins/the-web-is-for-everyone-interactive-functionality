@@ -48,5 +48,5 @@ Bij het nieuwsveld is de bedoeling dat de gebruiker alle artikelen kan zien en k
 <img width="138" height="300" alt="mobile-black (2)" src="https://github.com/user-attachments/assets/e6ae0fa1-ff1b-453f-9a8f-15c7beab48f6" />
 <img width="241" height="600" alt="tablet-black (2)" src="https://github.com/user-attachments/assets/a66de3ad-bf2e-4138-9baa-43ffc9a2415c" />
 
-
+https://github.com/user-attachments/assets/bfe887e2-e4f4-4529-bc91-df3227bc589e
 
