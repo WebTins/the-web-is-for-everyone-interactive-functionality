@@ -64,7 +64,7 @@ Nadat je bij het nieuwsveld op een artikel heb gedrukt dan kom je bij het volled
 
 Wanneer je een artikel aan het lezen bent is het ook fijn om je mening te kunnen delen met anderen. En ik heb in Sprint 9 mijn focus gelegd met het versturen van data doormiddel van een POST te gebruiken. Het vesturen van een comment is gemaakt met [routes](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/56360eedd883659c206f05320142d46e9406dda1/server.js#L96-L134) die in NodeJS staan.
 
-#### <ins>Feedforward & Feedback</ins>
+#### <ins>Feedforward & Feedback POST</ins>
 
 Feedforward versturen van comment:
 
@@ -82,7 +82,7 @@ https://github.com/user-attachments/assets/096b33ef-ed77-41de-813f-d66390906aaa
 
 Wanneer je een opmerking hebt/ziet die niet toepasselijk is of op spam lijkt, is het fijn om als gebruiker/admin de comment te kunnen verwijderen. Ik heb mij deze sprint ook gefocust met het verwijderen van data dat ik mogelijk heb gemaakt met een POST [routes](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/56360eedd883659c206f05320142d46e9406dda1/server.js#L96-L134) waar de DELETE method wordt gebruikt.
 
-#### <ins>Feedforward & Feedback</ins>
+#### <ins>Feedforward & Feedback DELETE</ins>
 
 Feedforward verwijderen van comment:
 
