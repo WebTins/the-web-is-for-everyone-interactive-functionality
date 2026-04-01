@@ -17,6 +17,8 @@ In dit project werk ik in mijn eentje
 
 [Website](https://the-web-is-for-everyone-interactive-6f4w.onrender.com/)
 
+**Homepage**
+
 De website is eerst ontworpen en daarna gebouwd met data die wordt opgehaald en ook data die wordt verstuurd. De homepagina toont op dit moment de collectie van de gebruiker en nieuws artikelen die de gebruiker kan lezen. De veldverkenner laat de flipcard zien van een plant.
 
 <img width="150" height="300" alt="mobile-black" src="https://github.com/user-attachments/assets/0d32ae1a-e99e-4b18-9b60-f6af38161bd4" />
@@ -24,4 +26,27 @@ De website is eerst ontworpen en daarna gebouwd met data die wordt opgehaald en 
 <img width="280" height="400" alt="tablet-black" src="https://github.com/user-attachments/assets/7cba5b1e-ebb0-4699-8076-dc81821c00ff" />
 
 > Mockup van de homepagina
+
+---
+
+**Veldverkenner**
+
+Op de veldverkenner heb ik zelf de veldverkenner nog niet in staan maar wel de flipcard die kan draaien om de gehele informatie van de plant te kunnen zien
+
+<img width="138" height="400" alt="mobile-black (1)" src="https://github.com/user-attachments/assets/1425f976-07ec-49c5-bf56-c78e3f76ae7c" />
+
+> Mockup van de veldverkenner flipcard
+
+https://github.com/user-attachments/assets/2f780256-bca0-4399-8308-0d00ad5bd0f6
+
+---
+
+**Nieuwsveld**
+
+Bij het nieuwsveld is de bedoeling dat de gebruiker alle artikelen kan zien en kan lezen wanneer ze op een artikel drukken. Ik heb de artikel pagina gemaakt waar ook alle data opgehaald wordt vanuit de database.
+
+<img width="138" height="300" alt="mobile-black (2)" src="https://github.com/user-attachments/assets/e6ae0fa1-ff1b-453f-9a8f-15c7beab48f6" />
+<img width="241" height="600" alt="tablet-black (2)" src="https://github.com/user-attachments/assets/a66de3ad-bf2e-4138-9baa-43ffc9a2415c" />
+
+
 
