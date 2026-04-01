@@ -96,5 +96,42 @@ Feedback verwijderen van comment:
 
 https://github.com/user-attachments/assets/96d34cfa-e4cc-415c-8bef-6798d9f9eb35
 
+## Kenmerken
 
+In dit project is er gebruik gemaakt van HTML, CSS, JS, NodeJS, Express, JSON en Liquid.
 
+### Empty state
+
+Op de artikel pagina kan je een reactie achterlaten en ik heb een empty state toegevoegd wanneer er geen opmerkingen zijn zodat de gebruiker kan zien dat er nog geen opmerkingen zijn voor het artikel.
+
+<img width="217" height="426" alt="image" src="https://github.com/user-attachments/assets/de42df4b-d442-485e-a5a5-cbf3328890fa" />
+
+### Progressive Enhancement
+
+Voor de [progressive enhancement](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/a7889db594d4f1d59af92119c2ac4959608d7041/public/style.css#L297-L300) heb ik `@media (prefers-reduced-motion)` gebruikt om animaties uit te zetten.
+
+https://github.com/user-attachments/assets/f2292d0a-0ddc-44e3-bcaa-db6f8a76695d
+
+## Code conventies
+
+### Ademnruimte
+
+In mijn code maak ik gebruik van ademruimte dat ervoor zorgt dat het lezen van code leesbaar is en te volgen is. Na elke element wordt een witregel gemaakt om het element duidelijk scheidbaar te tonen. En elementen in een elementen worden met 1 tab uitgespreid om te laten zien dat het in het parent element hoort.
+
+[Voorbeeld](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/a7889db594d4f1d59af92119c2ac4959608d7041/public/style.css#L7-L38)
+
+## Volgorde HTML en CSS nesting
+
+Bij onze code conventies hou ik rekening met de vologorde van de HTML structuur die ook in het CSS bestand op volgorde wordt gehouden, hierdoor wordt het lezen van code volgbaar en leesbaar. In mijn CSS bestand nest ik code die in het parent element/class horen. Dit zorgt voor een duidelijke structuur dat het lezen makkelijker maakt.
+
+## Custom properties
+
+Ik maak gebruik van custom-properties zodat ik niet steeds code hoeven te herhalen (DRY). De custom properties krijgen een duidelijke naamgeving in kebabcase zoals `--text-color-1`.
+
+## Class naamgeving
+
+De classes die ik aanmaak worden allemaal in het Engels geschreven met kebab-cases. Dit maakt het lezen makkelijker omdat je een scheiding maakt tussen woorden die niet leesbaar zijn aan elkaar.
+
+## Installatie
+
+Om mijn project te kunnen uitvoeren moet je eerst `npm i(nstall)` uitvoeren en zodra alle node packages zijn geïnstalleerd moet je `npm start` uitvoeren om de localhost te kunnen starten.
