@@ -19,8 +19,9 @@ In dit project werk ik in mijn eentje
 
 De website is eerst ontworpen en daarna gebouwd met data die wordt opgehaald en ook data die wordt verstuurd. De homepagina toont de collectie van de gebruiker en nieuws artikelen die de gebruiker kan lezen.
 
+<img width="150" height="300" alt="mobile-black" src="https://github.com/user-attachments/assets/0d32ae1a-e99e-4b18-9b60-f6af38161bd4" />
 
-<img width="270" height="450" alt="tablet-black" src="https://github.com/user-attachments/assets/6644915f-a4f5-4cf3-a550-b9512fe5c7e3" />
+<img width="300" height="400" alt="tablet-black" src="https://github.com/user-attachments/assets/7cba5b1e-ebb0-4699-8076-dc81821c00ff" />
 
 
 
