@@ -313,6 +313,59 @@ body {
         }
     }
 
+    .heading-news {
+    font-family: Sansita;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    .back-button {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .back-button {
+        align-self: flex-start;
+        margin: 1.5em;
+        
+        a {
+            transition: 0.2s ease-in-out;
+            font-family: Opensans;
+            font-weight: 600;
+            color: var(--zwart);
+            text-decoration: none;
+            display: flex;
+            gap: 0.5em;
+
+            /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+
+            &:hover {
+                color: var(--text-color-3);
+            }
+        }
+
+        a svg path {
+            transition: 0.2s ease-in-out;
+
+            /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+        }
+        /* Hover state van de SVG */
+        a:hover svg path {
+            color: var(--text-color-3);
+            fill: var(--text-color-3);
+        }
+        /* Hover state van de a link text */
+        a:hover {
+            color: var(--text-color-3);
+        }
+    }
+
     /* MARK: NIEUWSVELD */
     .main-news{
         display: flex;
@@ -320,59 +373,6 @@ body {
         width: 100%;
         align-items: center;
         padding-bottom: 80px;
-
-        .back-button {
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .back-button {
-            align-self: flex-start;
-            margin: 1.5em;
-            
-            a {
-                transition: 0.2s ease-in-out;
-                font-family: Opensans;
-                font-weight: 600;
-                color: var(--zwart);
-                text-decoration: none;
-                display: flex;
-                gap: 0.5em;
-
-                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
-                @media (prefers-reduced-motion: reduce) {
-                    transition: none;
-                }
-
-                &:hover {
-                    color: var(--text-color-3);
-                }
-            }
-
-            a svg path {
-                transition: 0.2s ease-in-out;
-
-                /* PROGRESSIVE ENHANCEMENT REDUCED MOTION */
-                @media (prefers-reduced-motion: reduce) {
-                    transition: none;
-                }
-            }
-            /* Hover state van de SVG */
-            a:hover svg path {
-                color: var(--text-color-3);
-                fill: var(--text-color-3);
-            }
-            /* Hover state van de a link text */
-            a:hover {
-                color: var(--text-color-3);
-            }
-        }
-
-        .heading-news {
-            font-family: Sansita;
-            margin: 0 auto;
-            text-align: center;
-        }
 
         .filter-nav {
             display: flex;
@@ -412,6 +412,8 @@ body {
             justify-content: center;
             align-items: center;
             width: 100%;
+            max-width: 600px;
+            padding-bottom: 1rem;
         }
 
         .search-bar input {
