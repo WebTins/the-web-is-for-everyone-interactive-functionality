@@ -122,7 +122,7 @@ In mijn code maak ik gebruik van ademruimte dat ervoor zorgt dat het lezen van c
 
 ## Volgorde HTML en CSS nesting
 
-Bij onze code conventies hou ik rekening met de vologorde van de HTML structuur die ook in het CSS bestand op volgorde wordt gehouden, hierdoor wordt het lezen van code volgbaar en leesbaar. In mijn CSS bestand nest ik code die in het parent element/class horen. Dit zorgt voor een duidelijke structuur dat het lezen makkelijker maakt.
+Bij mijn code conventies hou ik rekening met de vologorde van de HTML structuur die ook in het CSS bestand op volgorde wordt gehouden, hierdoor wordt het lezen van code volgbaar en leesbaar. In mijn CSS bestand nest ik code die in het parent element/class horen. Dit zorgt voor een duidelijke structuur dat het lezen makkelijker maakt.
 
 ## Custom properties
 
