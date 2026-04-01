@@ -34,6 +34,8 @@ De website is eerst ontworpen en daarna gebouwd met data die wordt opgehaald en 
 Op de veldverkenner heb ik zelf de veldverkenner nog niet in staan maar wel de flipcard die kan draaien om de gehele informatie van de plant te kunnen zien
 
 <img width="138" height="400" alt="mobile-black (1)" src="https://github.com/user-attachments/assets/1425f976-07ec-49c5-bf56-c78e3f76ae7c" />
+<img width="250" height="700" alt="tablet-black (4)" src="https://github.com/user-attachments/assets/08b3f1d8-0011-47c1-94aa-6137ecf8e6bb" />
+
 
 > Mockup van de veldverkenner flipcard
 
@@ -49,4 +51,50 @@ Bij het nieuwsveld is de bedoeling dat de gebruiker alle artikelen kan zien en k
 <img width="241" height="600" alt="tablet-black (2)" src="https://github.com/user-attachments/assets/a66de3ad-bf2e-4138-9baa-43ffc9a2415c" />
 
 https://github.com/user-attachments/assets/bfe887e2-e4f4-4529-bc91-df3227bc589e
+
+---
+
+**Artikel**
+
+Nadat je bij het nieuwsveld op een artikel heb gedrukt dan kom je bij het volledige artikel terecht waar je de details kan lezen
+
+<img width="241" height="600" alt="tablet-black (5)" src="https://github.com/user-attachments/assets/15bb93c4-8b64-434b-a875-391333084f4b" />
+
+## Comment plaatsen
+
+Wanneer je een artikel aan het lezen bent is het ook fijn om je mening te kunnen delen met anderen. En ik heb in Sprint 9 mijn focus gelegd met het versturen van data doormiddel van een POST te gebruiken. Het vesturen van een comment is gemaakt met [routes](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/56360eedd883659c206f05320142d46e9406dda1/server.js#L96-L134) die in NodeJS staan.
+
+#### <ins>Feedforward & Feedback</ins>
+
+Feedforward versturen van comment:
+
+- Er zijn nog geen opmerkingen (Empty state)
+- Met een hover over de "Verstuur" knop, krijgt de knop een donkere kleur
+
+Feedback versturen van comment:
+
+- Empty state verdwijnt
+- Er staat een opmerking met een Naam, bericht en datum
+
+https://github.com/user-attachments/assets/096b33ef-ed77-41de-813f-d66390906aaa
+
+## Comment verwijderen
+
+Wanneer je een opmerking hebt/ziet die niet toepasselijk is of op spam lijkt, is het fijn om als gebruiker/admin de comment te kunnen verwijderen. Ik heb mij deze sprint ook gefocust met het verwijderen van data dat ik mogelijk heb gemaakt met een POST [routes](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/56360eedd883659c206f05320142d46e9406dda1/server.js#L96-L134) waar de DELETE method wordt gebruikt.
+
+#### <ins>Feedforward & Feedback</ins>
+
+Feedforward verwijderen van comment:
+
+- Er is een opmerking
+- Met een hover over de "Verwijder" knop, krijgt de knop een lichtere kleur
+
+Feedback verwijderen van comment:
+
+- Opmerking verwdijnt
+- Als er maar 1 opmerking was en is verwijderd, dan komt de empty state tevoorschijn
+
+https://github.com/user-attachments/assets/96d34cfa-e4cc-415c-8bef-6798d9f9eb35
+
+
 
