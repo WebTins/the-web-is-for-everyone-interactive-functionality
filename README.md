@@ -12,6 +12,12 @@ In dit project werk ik in mijn eentje
 - [Tin Nguyen](https://github.com/WebTins)
 
 ## Inhoudsopgave
+1. [Beschrijving](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/main/README.md#beschrijving)
+2. [Comment plaatsen](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/main/README.md#comment-plaatsen)
+3. [Comment verwijderen](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/main/README.md#comment-verwijderen)
+4. [Kenmerken](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/main/README.md#kenmerken)
+5. [Code conventies](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/main/README.md#code-conventies)
+6. [Installatie](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/main/README.md#installatie)
 
 ## Beschrijving
 
