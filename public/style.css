@@ -504,4 +504,44 @@ body {
             }
         }
     }
+
+    /* MARK: ARTIKEL */
+    .artikel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            article {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                max-width: 500px;
+                align-self: center;
+
+                img {
+                    aspect-ratio: 4 / 3;
+                    align-self: center;
+                    object-fit: cover;
+                    width: 100%;
+                    height: auto;
+                    min-width: 200px;
+                    padding: 0.5rem;
+                    border-radius: 20px;
+                }
+
+                h2, p {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Opensans;
+                    padding: 0 1rem 1rem 1rem;
+                }
+
+                .date {
+                    padding: 1rem 0 1rem 1rem;
+                }
+            }
+        }
+    
 }
