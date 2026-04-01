@@ -1,36 +1,26 @@
-# Interactive Functionality
+# Bloemenveld Frankendael
+Ik heb in sprint 8 de opdracht gekregen om een webapp/website te maken voor het Bloemenveld Frankendael waar bezoekers de planten kunnen ontdekken die in de bloei staan in het bloemenveld. Het doel is niet alleen om gebruikers planten laten ontdekken maar dat ze ook iets kunnen doen doormiddel van opdrachten uit te voeren waar gebruikers dan de kenmerken van een plant zien.
 
-Ontwerp en maak voor een opdrachtgever een interactieve toepassing die voor iedereen toegankelijk is
+In sprint 9 heb ik mijn focus vooral gelegd bij het ophalen en versturen van data doormiddel van een GET en POST methode te gebruiken. Als POST methode heb ik bedacht dat gebruikers een opmerking kunnen achterlaten op een artikel (detailpagina) en dat je de opmerking kan verwijderen. Het verwijderen van een opmerking is eigenlijk alleen bedoeld voor de admin maar ik heb het toegevoegd zodat ik lange comments weg kan halen.
 
-De instructie vind je in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-web-is-for-everyone-interactive-functionality/blob/main/docs/INSTRUCTIONS.md)
+Bij dit project probeer ik alles aan het design te houden, omdat de opdrachtgever dat graag wilt samen met een vormalige student die het design heeft gemaakt. Zelf heb ik ook de mogelijkheid gekregen om mijn eigen ideeën toe te voegen aan het design als ik een goede reden heb dat de website beter maakt.
 
+**Developer**
+
+In dit project werk ik in mijn eentje 
+
+- [Tin Nguyen](https://github.com/WebTins)
 
 ## Inhoudsopgave
 
-  * [Beschrijving](#beschrijving)
-  * [Gebruik](#gebruik)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
-
 ## Beschrijving
-<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual of video toe 📸 -->
-<!-- Voeg een link toe naar GitHub Pages 🌐-->
 
-## Gebruik
-<!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
+[Website](https://the-web-is-for-everyone-interactive-6f4w.onrender.com/)
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
-
-## Installatie
-<!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
+De website is eerst ontworpen en daarna gebouwd met data die wordt opgehaald en ook data die wordt verstuurd. De homepagina toont de collectie van de gebruiker en nieuws artikelen die de gebruiker kan lezen.
 
 
-## Bronnen
+<img width="270" height="450" alt="tablet-black" src="https://github.com/user-attachments/assets/6644915f-a4f5-4cf3-a550-b9512fe5c7e3" />
 
-## Licentie
 
-This project is licensed under the terms of the [MIT license](./LICENSE).
+
