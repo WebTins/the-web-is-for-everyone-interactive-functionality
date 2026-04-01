@@ -544,4 +544,126 @@ body {
             }
         }
     
+    /* MARK: COMMENTS INPUT */
+    .comment-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+
+        .comment {
+            background-color: var(--background-color-2);
+            border-radius: 15px;
+            width: 100%;
+            min-width: 300px;
+            max-width: 470px;
+            height: 350px;
+
+            .name-input, .message-input {
+                width: 100%;
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem;
+                font-family: Opensans;
+                font-weight: 600;
+                gap: 0.5rem;
+
+                input {
+                    padding: 1rem;
+                    border-radius: 25px;
+                    border: none;
+                    font-family: Opensans;
+                }
+            }
+
+            .submit {
+                color: var(--text-color-1);
+                background-color: var(--text-color-3);
+                font-family: Opensans;
+                font-weight: 600;
+                width: 100px;
+                height: 40px;
+                padding: 0.5rem;
+                cursor: pointer;
+                transition: .2s ease-in-out;
+            }
+
+            .submit:hover {
+                background-color: var(--background-color-6);
+            }
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                padding: 1rem;
+                font-family: Opensans;
+                font-size: var(--font-size-sm);
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }
+
+    /* COMMENTS */
+    .messages {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
+        padding: 1rem 1rem 80px;
+        gap: .5rem;
+
+        .message-wrap {
+            padding: 1rem;
+            border-bottom: solid var(--background-color-6);
+            border-radius: 10px;
+        }
+
+        .comment-name {
+            font-weight: 600;
+        }
+
+        .date-created {
+            display: flex;
+            align-self: flex-end;
+            font-style: italic;
+            text-decoration: overline;
+        }
+
+        h3 {
+            font-family: Opensans;
+            padding-top: 2rem;
+        }
+
+        p, form {
+            padding: 0.5rem 0 0.5rem 0;
+            font-family: Opensans;
+        }
+
+        button {
+            display: flex;
+            align-self: flex-end;
+            color: var(--text-color-1);
+            font-family: Opensans;
+            background-color: var(--background-color-6);
+            border-radius: 25px;
+            padding: .5rem;
+            cursor: pointer;
+            transition: .2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: var(--background-color-2);
+            color: var(--text-color-2);
+        }
+    }
 }
