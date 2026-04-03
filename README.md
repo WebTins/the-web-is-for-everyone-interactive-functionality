@@ -108,15 +108,27 @@ In dit project is er gebruik gemaakt van HTML, CSS, JS, NodeJS, Express, JSON en
 
 ### Empty state
 
-Op de artikel pagina kan je een reactie achterlaten en ik heb een empty state toegevoegd wanneer er geen opmerkingen zijn zodat de gebruiker kan zien dat er nog geen opmerkingen zijn voor het artikel.
+Op de artikel pagina kan je een reactie achterlaten en ik heb een empty state toegevoegd wanneer er geen opmerkingen zijn zodat de gebruiker kan zien dat er nog geen opmerkingen zijn voor het artikel. Ik heb hiervoor in liquid een `{% else %}` statement gebruikt.
 
-<img width="217" height="426" alt="image" src="https://github.com/user-attachments/assets/de42df4b-d442-485e-a5a5-cbf3328890fa" />
+[Figma design](https://www.figma.com/design/At4n5rMiNKQKQGzvSkMT4u/Wireflow?node-id=184-204&m=dev)
+
+https://github.com/user-attachments/assets/64f8f289-af6d-4cf5-ab63-8232de825baf
 
 ### Progressive Enhancement
 
 Voor de [progressive enhancement](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/blob/a7889db594d4f1d59af92119c2ac4959608d7041/public/style.css#L297-L300) heb ik `@media (prefers-reduced-motion)` gebruikt om animaties uit te zetten.
 
+**Progressive enhancement designs**
+
+[Figma](https://www.figma.com/design/At4n5rMiNKQKQGzvSkMT4u/Wireflow?node-id=175-127&m=dev)
+
+<img width="375" height="335" alt="image" src="https://github.com/user-attachments/assets/98bd60b8-ac54-4da9-851b-0c1bdcdff931" />
+
 https://github.com/user-attachments/assets/f2292d0a-0ddc-44e3-bcaa-db6f8a76695d
+
+---
+
+Ook heb ik Empty state toegevoegd
 
 ## Code conventies
 
