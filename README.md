@@ -112,6 +112,9 @@ Op de artikel pagina kan je een reactie achterlaten en ik heb een empty state to
 
 [Figma design](https://www.figma.com/design/At4n5rMiNKQKQGzvSkMT4u/Wireflow?node-id=184-204&m=dev)
 
+<img width="334" height="580" alt="image" src="https://github.com/user-attachments/assets/e0d03152-6ddd-4fd0-a67b-b20bc0b66ca6" />
+
+
 https://github.com/user-attachments/assets/64f8f289-af6d-4cf5-ab63-8232de825baf
 
 ### Progressive Enhancement
