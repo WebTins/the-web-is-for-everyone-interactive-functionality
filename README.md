@@ -112,6 +112,8 @@ Op de artikel pagina kan je een reactie achterlaten en ik heb een empty state to
 
 [Figma design](https://www.figma.com/design/At4n5rMiNKQKQGzvSkMT4u/Wireflow?node-id=184-204&m=dev)
 
+De reden dat ik dit ontwerp heb gekozen is om de gebruiker duidelijk te laten weten dat er nog geen opmerking is voor het artikel.
+
 <img width="334" height="580" alt="image" src="https://github.com/user-attachments/assets/e0d03152-6ddd-4fd0-a67b-b20bc0b66ca6" />
 
 
@@ -124,6 +126,8 @@ Voor de [progressive enhancement](https://github.com/WebTins/the-web-is-for-ever
 **Progressive enhancement designs**
 
 [Figma](https://www.figma.com/design/At4n5rMiNKQKQGzvSkMT4u/Wireflow?node-id=175-127&m=dev)
+
+Sommige gebruikers vinden het fijn als de animaties uitgezet worden en daarom heb ik ervoor gekozen dat animaties voor de hover uitgezet worden.
 
 <img width="375" height="335" alt="image" src="https://github.com/user-attachments/assets/98bd60b8-ac54-4da9-851b-0c1bdcdff931" />
 
