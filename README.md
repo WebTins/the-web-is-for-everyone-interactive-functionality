@@ -23,6 +23,8 @@ In dit project werk ik in mijn eentje
 
 [Website](https://the-web-is-for-everyone-interactive-6f4w.onrender.com/)
 
+[WCAG Audit](https://github.com/WebTins/the-web-is-for-everyone-interactive-functionality/issues/24)
+
 **Homepage**
 
 De website is eerst ontworpen en daarna gebouwd met data die wordt opgehaald en ook data die wordt verstuurd. De homepagina toont op dit moment de collectie van de gebruiker en nieuws artikelen die de gebruiker kan lezen. De veldverkenner laat de flipcard zien van een plant.
